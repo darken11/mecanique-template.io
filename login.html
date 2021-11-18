@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link for normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- link for min -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- link to main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link to  web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700;900&display=swap" rel="stylesheet">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login">
+        <a class="prev" href="index.html"><i class="fas fa-times"></i></a>
+        <div class="container">
+            <div class="inscription" id="inscription">
+                <h2>S'inscrire</h2>
+                <h4>Déjà membre ?<a href="#" onclick="showDivLog();"> Se Connecter</a></h4>
+                <form name="myForm" action="" method="post">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <span class="error" id="errorEmail"></span>
+                    <label for="password">Mot De Passe</label>
+                    <input type="password" name="password" id="password">
+                    <span class="error" id="errorPass"></span>
+                    <input type="button" id="sub" onclick="return validateForm()" value="S'inscrire">
+                </form>
+            </div>
+            <div class="log" id="log" style="display: none;">
+
+                <h2>Se Connecter</h2>
+                <h4>Nouveau sur ce site ?<a href="#" onclick="showDivInscription();"> S'inscrire</a></h4>
+                <form name="myForm" action="" method="post">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <span class="error" id="errorEmail"></span>
+                    <label for="password">Mot De Passe</label>
+                    <input type="password" name="password" id="password">
+                    <span class="error" id="errorPass"></span>
+                    <a href="#" class="mp">Mot de passe oublié ?</a>
+                    <input type="button" id="su" onclick="return validateForm()" value="Se Connecter">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

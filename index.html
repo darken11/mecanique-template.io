@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- style for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link for normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- link for min -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- link to main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link to  web font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700;900&display=swap" rel="stylesheet">
+    <!-- start Header -->
+    <title>Web site </title>
+</head>
+
+<body>
+
+    <body>
+
+        <div class="header">
+            <div class="container">
+                <div class="nav" id="myNav">
+                    <a href="#" onclick="removeResponsive();">Acceuil</a>
+                    <a href="#services" onclick="removeResponsive();">Services</a>
+                    <a href="#projects" onclick="removeResponsive();">Projects</a>
+                    <a href="#histoir" onclick="removeResponsive();">Histoir</a>
+                    <a href="#contact" onclick="removeResponsive();">Contact</a>
+                    <a href="reservation.html" onclick="removeResponsive();">Reserver En Ligne</a>
+                    <a href="login.html" onclick="removeResponsive();"><i class="fas fa-user-circle"> </i>Connection</a>
+
+                    <a href="#" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                    <a href="#" id="hideMenu" class="hideMenu" onclick="hideMenu();"><i class="fas fa-times"></i></a>
+                    <div class="menu-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+        <!-- Start Landing -->
+        <div class="landing">
+            <img src="images/mecaniqueLanding.jpg" class="image" alt="">
+            <div class="presentation">
+                <img src="images/cle2-removebg-preview.png" alt="">
+                <h3>Rabi & Col</h3>
+                <h6>Belle Mécanique</h6>
+            </div>
+        </div>
+
+        <div class="help" id="help" onclick="hideHelp();">
+            <i class="fas fa-comment-dots"></i>
+            <p>Vous Souhaitez Discuter ?</p>
+        </div>
+        <div class="chatBox" id="chatBox">
+            <div class="headerBox">
+                <h4>Vous souhaitez discuter?</h4>
+                <a href="#" id="hideBox" onclick="hideBox();"><i class="fas fa-times"></i></a>
+                <p>Nous vous répondons dès que possible.</p>
+            </div>
+            <div class="bodyBox" id="bodyBox"></div>
+            <div class="footerBox">
+                <form action="">
+                    <input type="text" id="message" name="message" autofocus placeholder="Saisissez votre message ...">
+                    <a type="button" onClick="sendText();" onkeypress="sendText();" class="send"><i class="fas fa-paper-plane"></i></a>
+                    <br>
+                    <a href="#"><i class="far fa-smile"></i></a>
+
+                    <label for="fileChose">
+                        <i id="iconFile" class="fas fa-arrow-circle-up"></i>
+                
+                    </label>
+                    <input type="file" id="fileChose">
+                </form>
+            </div>
+        </div>
+        <div class="landing-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!-- End Landing -->
+        <!-- Start Services -->
+        <div class="services" id="services">
+            <div class="main-title">Services</div>
+            <div class="container">
+
+                <div class="service">
+                    <i class="fas fa-tools"></i>
+                    <div class="info">
+                        <h3>Réparation</h3>
+                        <p>Service de réparation de carrosserie, travaux de mécanique.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <i class="fas fa-swatchbook"></i>
+                    <div class="info">
+                        <h3>Révetement</h3>
+                        <p>Revêtement intérieur, moquettes acoustiques et accessoires automobiles.</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <i class="fas fa-paint-roller"></i>
+                    <div class="info">
+                        <h3>Peinture</h3>
+                        <p>Service d'entretien et de peinture pour carrosserie et jantes. Choix de teintes métallisées.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Services -->
+        <!-- Start Projets -->
+        <div class="projects" id="projects">
+            <div class="main-title2">Projects</div>
+            <p class="parag">Des voitures de collection rénovées avec passion</p>
+            <div class="containere">
+                <div class="box">
+
+                    <img src="images/auto/auto5.jpg" alt="">
+
+                    <div class="present">
+                        <div class="info">
+                            <h3>Titre de l'image</h3>
+                            <p>Revêtement intérieur, moquettes acoustiques et accessoires automobiles.</p>
+                        </div>
+                        <div class="link">
+                            <a class="heart" href="#"><i class="far fa-heart"></i></a>
+                            <a class="share" href="#"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/auto/auto2.jpg" alt="">
+                    <div class="present">
+                        <div class="info">
+                            <h3>Titre de l'image</h3>
+                            <p>Revêtement intérieur, moquettes acoustiques et accessoires automobiles.</p>
+                        </div>
+                        <div class="link">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/auto/auto3.jpg" alt="">
+                    <div class="present">
+                        <div class="info">
+                            <h3>Titre de l'image</h3>
+                            <p>Revêtement intérieur, moquettes acoustiques et accessoires automobiles.</p>
+                        </div>
+                        <div class="link">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/auto/auto4.jpg" alt="">
+                    <div class="present">
+                        <div class="info">
+                            <h3>Titre de l'image</h3>
+                            <p>Revêtement intérieur, moquettes acoustiques et accessoires automobiles.</p>
+                        </div>
+                        <div class="link">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/auto/auto1.jpg" alt="">
+                    <div class="present">
+                        <div class="info">
+                            <h3>Titre de l'image</h3>
+                            <p>Revêtement intérieur, moquettes acoustiques et accessoires automobiles.</p>
+                        </div>
+                        <div class="link">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/auto/auto6.jpg" alt="">
+                    <div class="present">
+                        <div class="info">
+                            <h3>Titre de l'image</h3>
+                            <p>Revêtement intérieur, moquettes acoustiques et accessoires automobiles.</p>
+                        </div>
+                        <div class="link">
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="fas fa-share"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- End Projets -->
+        <!-- Start Histoir -->
+        <div class="histoir" id="histoir">
+            <div class="history">
+                <div class="main-title2">Histoir</div>
+                <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur "Modifier Texte" ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices. Déplacez-moi où vous le souhaitez sur votre page. Expliquez ici votre
+                    parcours et présentez votre activité à vos visiteurs.</p>
+                <p>Présentez votre entreprise, vos services et vos équipes. Utilisez cet espace pour décrire votre activité. Présentez votre équipe et les services proposés. Expliquez à vos visiteurs vos motivations, vos objectifs et soulignez vos avantages
+                    par rapport à vos concurrents. Démarquez-vous et captivez l'attention de vos visiteurs.</p>
+            </div>
+
+        </div>
+
+
+        <!-- End Histoir -->
+        <!-- start floting img -->
+        <img class="flot-image" src="images/auto/couple.jpg" alt="">
+        <!-- end floting img -->
+
+        <!-- Start contact -->
+        <div class="contact" id="contact">
+            <img src="images/auto/auto-fac-removebg.png" class="faceAuto" alt="">
+            <div class="box">
+
+                <div class="main-title3">Nous contacter</div>
+                <div class="contactBox">
+                    <div class="info">
+                        <p>1 rue du Château <br> 75001 Paris, France</p>
+                        <p><a href="mailto:info@monsite.com">info@monsite.com</a></p>
+                        <p>​Tél : 01 23 45 67 89</p>
+                        <p>HEURES D'OUVERTURE:</p>
+                        <p>Lundi - Vendredi : 7h00 - 22h00<br> Samedi : 8h00 - 22h00<br> Dimanche : 8h00 - 23h00</p>
+                    </div>
+                    <div class="forms">
+                        <form action="">
+                            <label for="prenom">Prénom</label><br>
+                            <input type="text" id="prenom">
+                            <label for="nom">Nom de famille</label><br>
+                            <input type="text" id="nom">
+                            <label for="email">E-mail<span> * </span></label><br>
+                            <input type="email" id="email">
+                            <label for="objet">Objet</label><br>
+                            <input type="text" id="objet">
+                            <label for="message">Message</label><br>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+                            <input type="button" value="Envoyer">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End  Contact -->
+        <!-- Start Footer -->
+        <div class="footer" id="footer">
+
+
+            <div class="container">
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <ul>
+                    <li><a href="#">Montion Légales</a></li>
+                    <li><a href="#">en matière de cookies</a> </li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Condtions d'utilisation</a></li>
+                </ul>
+                <div class="signatur">
+                    <p>&copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> Made with <span>&hearts;</span> By Rabi </p>
+                </div>
+            </div>
+
+            <a href="#" class="chevron"><i class="fas fa-chevron-circle-up"></i></a>
+        </div>
+
+        <!-- End Footer -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
